@@ -120,7 +120,6 @@ class TestLibrary < Minitest::Test
       library = Library.new([{title: "Harry Potter", rental_details: {student: "Borna", due_date: "22/10/2018"}}, {title: "Lord of the Rings", rental_details: {student: "Jake", due_date: "19/04/2018"}}])
       assert_equal("BOOK NOT FOUND", library.change_rental_details("Bob the Builder", "Jake", "23/10/2018"))
     end
-
 end
 
 
